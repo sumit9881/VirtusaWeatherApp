@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_search"
+            android:background="@android:drawable/screen_background_light_transparent" />
+
+        <EditText
+            android:id="@+id/edittext_searchtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button_search"
+            android:layout_centerVertical="true"
+            android:textAllCaps="false"
+            android:hint="@string/search_hint"
+            android:textSize="15sp"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:text="@string/default_value" />
+
+    <ImageView
+        android:id="@+id/imageview_weather"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/textview_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_value" />
+
+    <TextView
+        android:id="@+id/textview_curtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/default_value" />
+
+    <TextView
+        android:id="@+id/textview_maxtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/default_max_temp" />
+
+    <TextView
+        android:id="@+id/textview_mintemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_max_temp" />
+
+    <TextView
+        android:id="@+id/textview_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_humidity" />
+
+</LinearLayout>
